@@ -61,7 +61,7 @@ function draw() {
   }
 }
 
-function touchStarted() {
+function touchEnded() {
   for (let i = 0; i < 10; i++) {
     setTimeout(function() {
       textSizeClick += i / 5;
@@ -69,7 +69,7 @@ function touchStarted() {
       blink = false;
     }, 2000);
   }
-  //blink = !blink;
+  blink = !blink;
 }
 
 class Eye {
