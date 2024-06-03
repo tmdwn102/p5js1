@@ -61,7 +61,7 @@ function draw() {
   }
 }
 
-function touchEnded() {
+function touchStarted() {
   for (let i = 0; i < 10; i++) {
     setTimeout(function() {
       textSizeClick += i / 5;
