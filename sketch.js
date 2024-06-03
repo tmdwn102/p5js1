@@ -69,7 +69,7 @@ function touchStarted() {
       blink = false;
     }, 2000);
   }
-  blink = !blink;
+  //blink = !blink;
 }
 
 class Eye {
