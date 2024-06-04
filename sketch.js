@@ -1,4 +1,3 @@
-
 let eyes = [];
 let eyeSize = 40;
 let eyePairSpacing = 40; //눈 쌍 사이의 간격
