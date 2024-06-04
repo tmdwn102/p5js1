@@ -1,6 +1,3 @@
-//closed 글자 가운데로
-//모바일로 봤을 때 눈이 안 잘리게 보는 법
-
 
 let eyes = [];
 let eyeSize = 40;
@@ -94,7 +91,7 @@ class Eye {
   display(mx, my) {
     let distance = dist(mx, my, this.x, this.y);
     let turningRed = map(distance, 0, width, 255, 0);
-    let pupilSize = map(distance, 0, width, this.size / 2 * 1.3, this.size / 2*1.3;
+    let pupilSize = map(distance, 0, width, this.size / 2 * 1.3, this.size / 2);
 
     push();
     translate(this.x, this.y);
