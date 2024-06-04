@@ -1,3 +1,4 @@
+
 let eyes = [];
 let eyeSize = 40;
 let eyePairSpacing = 40; //눈 쌍 사이의 간격
@@ -67,7 +68,7 @@ function touchStarted() {
       textSizeClick += i / 5;
       textShake += i / 20;
       blink = false;
-    }, 2000);
+    }, 1500);
   }
   blink = !blink;
 }
@@ -89,7 +90,7 @@ class Eye {
 
   display(mx, my) {
     let distance = dist(mx, my, this.x, this.y);
-    let redIntensity = map(distance, 0, width, 255, 0);
+    let turningRed = map(distance, 0, width, 255, 0);
 
     push();
     translate(this.x, this.y);
@@ -116,7 +117,7 @@ class Eye {
 
     //동공
     rotate(this.angle);
-    fill(redIntensity, 0, 0);
+    fill(turningRed, 0, 0);
     noStroke();
     if (!this.closed) {
       ellipse(this.size / 5, 0, this.size / 2, this.size / 2);
